@@ -1,10 +1,10 @@
 .choose{
-    display: inline;
+    margin-top: 10%;
     size:100%;
+    margin-left: 25%;
     
 }
 
 .image{
-    margin-right: auto;
-    margin-top: auto;
+    margin-right: 10%;
 }

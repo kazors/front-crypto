@@ -4,13 +4,17 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ImageChooserComponent } from './image-chooser/image-chooser.component';
-
+import {HttpClientModule, HttpHeaders}from '@angular/common/http'
+import {Observable} from 'rxjs/Rx';
 @NgModule({
   declarations: [
     AppComponent,
-    ImageChooserComponent
+    ImageChooserComponent,
+    
   ],
   imports: [
+    HttpClientModule,
+    
     BrowserModule,
     AppRoutingModule
   ],
