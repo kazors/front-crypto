@@ -30,10 +30,9 @@ export class ImageChooserComponent implements OnInit {
     testheader.set("Access-Control-Allow-Origin", "*");
     testheader.set("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     
-     this.http.get('http://127.0.0.1:8080/tad', {headers: this.headerService.getHeader(), responseType: 'text'}).subscribe(data => console.log(data));
+     this.http.get('http://127.0.0.1:8080/tad', {headers: this.headerService.getHeader(), responseType: 'text'}).subscribe(data => console.log("bite"));
     
-    console.log(sha1(sha1(sha1('Message to hash'))));
-    console.log(sha1('Message to hash'));
+    
     
   }
 
