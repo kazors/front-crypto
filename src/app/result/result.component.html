@@ -1,0 +1,26 @@
+
+<div class = "result1">
+  <div class = "blocResult">
+  <img  src="../../assets/Tadmorve.png">
+  <p>Il y à actuellement {{nbVoteTad}} pour Tadmorve</p>
+</div>
+<div class="blocResult"> 
+  <img  src="../../assets/téléchargement.png"> 
+  <p> Il y a actuellement {{nbVoteBob}} pour Bob</p>
+</div>
+
+<div class = "phrase">
+  <div *ngIf="nbVoteBob  > nbVoteTad">
+    <p align="center"> Bob l'éponge est en tête </p>
+  </div>
+  <div *ngIf="nbVoteBob < nbVoteTad"> 
+    <p align="center">Tadmorve est en tête</p> 
+  </div> 
+  
+  <div *ngIf="nbVoteBob === nbVoteTad"> 
+    <p  align="center"> Les 2 concurrents sont à égalité</p>
+   </div>
+  </div>
+  
+  
+</div>
